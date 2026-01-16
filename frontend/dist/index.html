@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addict Tracker</title>
+    
+<script type="module">
+import init, * as bindings from '/addict_tracker-7e9e5a88d11b63d.js';
+const wasm = await init({ module_or_path: '/addict_tracker-7e9e5a88d11b63d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <link rel="stylesheet" href="/style-9f20dc67cbe7f5cf.css" integrity="sha384-sOeCn3yWJVnQXfk8dAkv8PWuOE6NA/VcX3ouSPHWR9KCZjxR3DtjQHBh7H89B2vU"/>
+  <link rel="modulepreload" href="/addict_tracker-7e9e5a88d11b63d.js" crossorigin="anonymous" integrity="sha384-bbrcAAy2C+fAIwSCZu6daqp3Y8NO7QLT5rSh9zkokaB6IPfXIAKax7cTusdyofVH"><link rel="preload" href="/addict_tracker-7e9e5a88d11b63d_bg.wasm" crossorigin="anonymous" integrity="sha384-u2wpxk4NhhdmoMX1Q7+thb762HFywbYg5wWTMiSDR1Bn9Un6q39pBS6dJfyO8ysu" as="fetch" type="application/wasm"></head>
+  <body>
+  </body>
+</html>

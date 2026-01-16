@@ -1,0 +1,218 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #1a1a1a;
+    color: #0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #0f0;
+    border: 1px solid #000;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #555;
+    background-color: #000;
+    box-shadow: 5px 5px 0px #333;
+    padding: 10px;
+}
+
+header {
+    border-bottom: 2px dashed #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Winamp Buttons */
+.winamp-btn, .winamp-btn-small {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    font-family: inherit;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 0px #0f0;
+    transition: all 0.1s;
+}
+
+.winamp-btn.active {
+    background-color: #0f0;
+    color: #000;
+    box-shadow: inset 2px 2px 0px #000;
+}
+
+.winamp-btn:active, .winamp-btn-small:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px;
+}
+
+.winamp-btn-small {
+    padding: 2px 5px;
+    font-size: 0.7rem;
+    border-color: #f00;
+    color: #f00;
+    box-shadow: 2px 2px 0px #f00;
+}
+
+/* Habit Card (Tracker) */
+.habit-card {
+    border: 2px solid #0f0; /* Default, overridden by inline style */
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #111;
+}
+
+.habit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.habit-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.habit-name {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.habit-stats {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Habit Library Item */
+.habit-item {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #111;
+    display: flex;
+    align-items: center;
+}
+.habit-item .icon { font-size: 1.5rem; margin-right: 10px; }
+.habit-item .name { font-weight: bold; flex-grow: 1; }
+.habit-item .details { font-size: 0.8rem; color: #777; }
+
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-style: italic;
+    border: 1px dashed #333;
+}
+
+.hint {
+    color: #555;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Visualizer */
+.visualizer-container {
+    margin-top: 10px;
+    border-top: 1px dotted #333;
+    padding-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #050505;
+}
+
+.visualizer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.viz-item {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.viz-overflow {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* Forms */
+.creator-form {
+    border: 1px solid #555;
+    padding: 15px;
+    background: #0d0d0d;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.info {
+    font-size: 0.8rem;
+    color: #aaa;
+    font-style: italic;
+    padding: 5px;
+    border: 1px dotted #333;
+}

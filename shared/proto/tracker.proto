@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package tracker;
+
+message TrackerState {
+  string habit_id = 1;      // UUID as string
+  int64 start_timestamp = 2; // Unix timestamp
+  string user_name = 3;      // Optional custom name
+}
