@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package tracker;
+
+message TrackerState {
+  int64 start_timestamp = 1; // Unix timestamp
+  double units_per_day = 2;
+  optional string theme_id = 3;
+  string user_name = 4;
+}
+
+message Theme {
+  string id = 1;
+  string name = 2;
+  string css = 3;
+  optional int32 icon_limit = 4;
+}
+
+message Habit {
+  string id = 1;
+  string slug = 2;
+  string name = 3;
+  string icon = 4;
+  string unit_name = 5;
+}

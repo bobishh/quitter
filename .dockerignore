@@ -1,0 +1,9 @@
+target/
+.git/
+Dockerfile
+.dockerignore
+node_modules/
+frontend/dist/
+frontend/target/
+.env
+*.log
